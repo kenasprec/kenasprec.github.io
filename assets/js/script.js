@@ -12,7 +12,7 @@ $(document).ready(function () {
 
     // jQuery Function Number 3
     $('.button').click(function () {
-        $(this).css('background', '#FF0000');
+        $(this).css('background', 'red');
     });
 
     $('#typeit').typeIt({
