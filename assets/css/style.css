@@ -5,6 +5,11 @@ body, html {
     height: 100%;
 }
 
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
 #wrapper {
     margin: 0 auto;
     width: 75%;
@@ -67,8 +72,18 @@ body, html {
     font-size: 65px;
     font-family: 'Muli', sans-serif;
     color: #333333;
+    cursor: pointer;
 }
 
-#about_container {
+#about_pic {
+    position: relative;
+    top: 60px;
+}
 
+#text {
+    position: relative;
+    left: 480px;
+    bottom: 540px;
+    font-family: 'Muli', sans-serif;
+    color: #333333;
 }

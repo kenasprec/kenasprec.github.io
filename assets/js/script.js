@@ -15,6 +15,13 @@ $(document).ready(function () {
         $(this).css('background', 'red');
     });
 
+    $('#incomplete').click(function () {
+        // jQuery Function Number 4
+        $(this).fadeOut(function () {
+            $(this).text("Sorry!").fadeIn();
+        });
+    });
+
     $('#typeit').typeIt({
         strings: ['Developer', 'Designer', 'Leader', 'Kendal Asprec'],
         speed: 100,
