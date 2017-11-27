@@ -1,6 +1,6 @@
 body, html {
     margin: 0 auto;
-    background-color: #D6D6D6;
+    background-color: whitesmoke;
     width: 100%;
     height: 100%;
 }
@@ -15,6 +15,11 @@ body, html {
     display: flex;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .button {
     /* creates equal size tabs */
     flex-grow: 1;
@@ -23,20 +28,37 @@ body, html {
     /* for the tabs themselves */
     /* background-color: #4D89FF;  use this for hover */
     background-color: dimgrey;
-    height: 80px;
+    height: 70px;
     float: left;
     position: relative;
 
     /* for the text */
     color: white;
-    font-size: 32px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     vertical-align: middle;
-    line-height: 80px;
+    line-height: 70px;
+    cursor: pointer;
 }
 
 #content {
     position: relative;
+    height: 700px;
+}
 
+#container {
+    position: relative;
+    top: 125px;
+    text-align: center;
+}
+
+#home_pic img {
+    border-radius: 100%;
+}
+
+#typeit {
+    margin-top: 15px;
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
 }
