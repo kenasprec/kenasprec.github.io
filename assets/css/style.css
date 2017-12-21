@@ -1,6 +1,6 @@
 body, html {
     margin: 0 auto;
-    background-color: whitesmoke;
+    background-color: #323232;
     width: 100%;
     height: 100%;
 }
@@ -12,78 +12,232 @@ a, a:visited, a:hover, a:active {
 
 #wrapper {
     margin: 0 auto;
-    width: 75%;
-    min-width: 960px;
+    width: 85%;
+    min-width: 1000px;
+    height: 100%;
 }
 
 #navbar {
-    display: flex;
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    margin-top: 50px;
 }
 
-.button {
-    /* creates equal size tabs */
-    flex-grow: 1;
-    flex-shrink: 1;
-
-    /* for the tabs themselves */
-    /* background-color: #4D89FF;  use this for hover */
-    background-color: dimgrey;
-    height: 70px;
-    float: left;
+#profile-pic {
     position: relative;
+    left: 15px;
+    width: 270px;
+    height: 270px;
+}
 
-    /* for the text */
-    color: white;
-    font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 70px;
-    cursor: pointer;
+#icon-container {
+    position: relative;
+    width: 100%;
+    height: 75px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    position: relative;
+    float: left;
+    margin: 5px;
+
+    width: 65px;
+    height: 65px;
+}
+
+.icon-img {
+    opacity: 0.5;
+}
+
+#button-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+}
+
+.tab {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+#square {
+    position: relative;
+    width: 100%;
+    height: 66px;
+
+    transition: 0.3s;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+#square:hover {
+    border-top: 3px solid #D2527F;
+    border-bottom: 3px solid #D2527F;
+    transition: 0.3s;
+}
+
+#triangle {
+    position: relative;
+    width: 100%;
+    height: 66px;
+
+    transition: 0.3s;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+#triangle:hover {
+    border-top: 3px solid #65C6BB;
+    border-bottom: 3px solid #65C6BB;
+    transition: 0.3s;
+}
+
+#circle {
+    position: relative;
+    width: 100%;
+    height: 66px;
+
+    transition: 0.3s;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+#circle:hover {
+    border-top: 3px solid #D24D57;
+    border-bottom: 3px solid #D24D57;
+    transition: 0.3s;
+}
+
+#x {
+    position: relative;
+    width: 100%;
+    height: 66px;
+
+    transition: 0.3s;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+#x:hover {
+    border-top: 3px solid #67809F;
+    border-bottom: 3px solid #67809F;
+    transition: 0.3s;
+}
+
+.button-pic {
+    position: relative;
+    float: left;
+    width: 66px;
+    height: 66px;
+}
+
+#separator {
+    position: fixed;
+    margin-left: 300px;
+    width: 40px;
+    height: 100%;
+}
+
+#separator-line {
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 10px;
+    height: 100%;
+
+    background-color: #b2b2b2;
 }
 
 #content {
     position: relative;
-    height: 700px;
+    margin-left: 340px;
+    top: 50px;
+
+    color: #b2b2b2;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-#home_container {
+/*
+
+.LR_edge {
     position: relative;
-    top: 125px;
-    text-align: center;
+    float: left;
+    width: 150px;
+    height: 100%;
 }
 
-#home_pic img {
-    border-radius: 100%;
-}
-
-#typeit {
-    margin-top: 15px;
-    font-size: 35px;
-    font-family: 'Muli', sans-serif;
-    color: #333333;
-}
-
-#incomplete {
+#middle {
     position: relative;
-    text-align: center;
-    top: 40%;
-    transform: translateY(-50%);
+    float: left;
+    width: 700px;
+}
+
+.TB_edge {
+    position: relative;
+    height: 150px;
+}
+
+#center {
+    position: relative;
+    height: 400px;
+}
+
+#display_text {
+    position: relative;
+    padding: 10%;
+
+    color: white;
     font-size: 65px;
     font-family: 'Muli', sans-serif;
-    color: #333333;
-    cursor: pointer;
+
+    margin: 0 auto;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-#about_pic {
+#triangle {
     position: relative;
-    top: 60px;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+
+    margin: 0 auto;
 }
 
-#text {
+#square {
     position: relative;
-    left: 480px;
-    bottom: 540px;
-    font-family: 'Muli', sans-serif;
-    color: #333333;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+
+    top: 50%;
+    transform: translateY(-50%);
 }
+
+#circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#x {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+
+    margin: 0 auto;
+}
+*/
