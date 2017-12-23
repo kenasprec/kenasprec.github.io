@@ -2,13 +2,6 @@ $(document).ready(function () {
 
     $('#overview').fadeIn(1000);
 
-    $('#location').typeIt({
-        strings: 'Overview',
-        speed: 25,
-        breakLines: false,
-        cursor: false
-    });
-
     $('#profile-pic').click(function () {
         $('#separator1-line').css({'background-color':'#cccccc', 'transition':'0.3s'});
         $('#separator2-line').css({'background-color':'#cccccc', 'transition':'0.3s'});
