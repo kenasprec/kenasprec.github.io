@@ -29,10 +29,15 @@ a, a:visited, a:hover, a:active {
     left: 25px;
     width: 250px;
     height: 250px;
+
+    transition: 0.3s;
 }
 
 #profile-pic:hover {
     cursor: pointer;
+    transform: scale(1.07);
+
+    transition: 0.3s;
 }
 
 #icon-container {
@@ -365,4 +370,22 @@ a, a:visited, a:hover, a:active {
     color: #cccccc;
     font-size: 23px;
     font-family: 'Montserrat', sans-serif;
+}
+
+#wip {
+    position: relative;
+    margin-left: 350px;
+    top: 190px;
+    width: calc(100% - 340px);
+    height: calc(100% - 2% - 190px);
+
+    display: none;
+}
+
+#wip-text {
+    position: relative;
+
+    color: #cccccc;
+    font-size: 30px;
+    font-family: 'Muli', sans-serif;
 }

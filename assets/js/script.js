@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $('#overview').fadeIn(1000);
+    $('#overview').fadeIn(750);
 
     $('#profile-pic').click(function () {
         $('#separator1-line').css({'background-color':'#cccccc', 'transition':'0.3s'});
@@ -11,7 +11,9 @@ $(document).ready(function () {
             speed: 25,
             breakLines: false,
             cursor: false
-        })
+        });
+        $('#wip').hide();
+        $('#overview').fadeIn(750);
     });
 
     $('#square').click( function () {
@@ -24,6 +26,8 @@ $(document).ready(function () {
             breakLines: false,
             cursor: false
         });
+        $('#overview').hide();
+        $('#wip').fadeIn(750);
     }).hover(function () {
         $(this).find('.button-text').typeIt({
             strings: 'About Me',
@@ -44,7 +48,9 @@ $(document).ready(function () {
             speed: 25,
             breakLines: false,
             cursor: false
-        })
+        });
+        $('#overview').hide();
+        $('#wip').fadeIn(750);
     }).hover(function () {
         $(this).find('.button-text').typeIt({
             strings: 'Projects',
@@ -65,7 +71,9 @@ $(document).ready(function () {
             speed: 25,
             breakLines: false,
             cursor: false
-        })
+        });
+        $('#overview').hide();
+        $('#wip').fadeIn(750);
     }).hover(function () {
         $(this).find('.button-text').typeIt({
             strings: 'Experience',
@@ -86,7 +94,9 @@ $(document).ready(function () {
             speed: 25,
             breakLines: false,
             cursor: false
-        })
+        });
+        $('#overview').hide();
+        $('#wip').fadeIn(750);
     }).hover(function () {
         $(this).find('.button-text').typeIt({
             strings: 'Fun and Games',
