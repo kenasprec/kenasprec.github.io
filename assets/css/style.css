@@ -26,15 +26,19 @@ a, a:visited, a:hover, a:active {
 
 #profile-pic {
     position: relative;
-    left: 15px;
-    width: 270px;
-    height: 270px;
+    left: 25px;
+    width: 250px;
+    height: 250px;
+}
+
+#profile-pic:hover {
+    cursor: pointer;
 }
 
 #icon-container {
     position: relative;
     width: 100%;
-    height: 75px;
+    height: 70px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -42,14 +46,31 @@ a, a:visited, a:hover, a:active {
 .icon {
     position: relative;
     float: left;
-    margin: 5px;
+    width: 62px;
+    height: 62px;
+    margin-left: 2px;
+    margin-right: 3px;
 
-    width: 65px;
-    height: 65px;
+    transition: 0.3s;
+    border: 4px solid transparent;
 }
+
+/* Add in later
+.icon:hover {
+    transition: 0.3s;
+    border: 4px solid #b2b2b2;
+}
+*/
 
 .icon-img {
     opacity: 0.5;
+    transition: 0.3s;
+}
+
+.icon-img:hover {
+    opacity: 1.0;
+    transform: scale(1.2);
+    transition: 0.3s;
 }
 
 #button-container {
@@ -74,9 +95,12 @@ a, a:visited, a:hover, a:active {
     transition: 0.3s;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
+
+    color: #D2527F;
 }
 
 #square:hover {
+    cursor: pointer;
     border-top: 3px solid #D2527F;
     border-bottom: 3px solid #D2527F;
     transition: 0.3s;
@@ -90,9 +114,12 @@ a, a:visited, a:hover, a:active {
     transition: 0.3s;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
+
+    color: #65C6BB;
 }
 
 #triangle:hover {
+    cursor: pointer;
     border-top: 3px solid #65C6BB;
     border-bottom: 3px solid #65C6BB;
     transition: 0.3s;
@@ -106,9 +133,12 @@ a, a:visited, a:hover, a:active {
     transition: 0.3s;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
+
+    color: #D24D57;
 }
 
 #circle:hover {
+    cursor: pointer;
     border-top: 3px solid #D24D57;
     border-bottom: 3px solid #D24D57;
     transition: 0.3s;
@@ -122,9 +152,12 @@ a, a:visited, a:hover, a:active {
     transition: 0.3s;
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
+
+    color: #67809F;
 }
 
 #x:hover {
+    cursor: pointer;
     border-top: 3px solid #67809F;
     border-bottom: 3px solid #67809F;
     transition: 0.3s;
@@ -137,107 +170,199 @@ a, a:visited, a:hover, a:active {
     height: 66px;
 }
 
-#separator {
-    position: fixed;
-    margin-left: 300px;
-    width: 40px;
-    height: 100%;
+.button-text-container {
+    position: relative;
+    float: left;
+    width: 234px;
+    height: 66px;
 }
 
-#separator-line {
+.button-text {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 25px;
+    font-family: 'Muli', sans-serif;
+}
+
+#separator1 {
+    position: fixed;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    width: 40px;
+    height: calc(100% - 20px - 20px);
+}
+
+#separator1-line {
     position: relative;
     margin-left: 15px;
     margin-right: 15px;
     width: 10px;
     height: 100%;
 
-    background-color: #b2b2b2;
+    background-color: #cccccc;
 }
 
-#content {
-    position: relative;
-    margin-left: 340px;
-    top: 50px;
+#top-nav {
+    position: fixed;
+    margin-left: 350px;
+    margin-top: 50px;
+    width: calc(85% - 340px);
+    height: 130px;
+    min-width: 660px;
+}
 
-    color: #b2b2b2;
+#top-content {
+    position: relative;
+    width: 100%;
+    height: 90px;
+}
+
+#name {
+    position: relative;
+    width: 100%;
+    height: 50px;
+
+    color: #cccccc;
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
 }
 
-/*
+#location {
+    position: relative;
+    width: 100%;
+    height: 40px;
 
-.LR_edge {
+    color: #cccccc;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#separator2 {
+    position: relative;
+    width: 100%;
+    height: 40px;
+}
+
+#separator2-line {
+    position: relative;
+    top: 15px;
+    width: 100%;
+    height: 10px;
+
+    background-color: #cccccc;
+}
+
+#overview {
+    position: relative;
+    margin-left: 350px;
+    top: 190px;
+    width: calc(100% - 340px);
+    height: calc(100% - 2% - 190px);
+
+    display: none;
+}
+
+.overview-tile {
+    position: relative;
+    width: 100%;
+    height: 33%;
+}
+
+.overview-header {
+    position: relative;
+    width: 100%;
+    height: 30px;
+
+    color: #cccccc;
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+
+    border-bottom: 1px solid #cccccc;
+}
+
+.overview-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 30px - 14px);
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+#summary {
+    color: #cccccc;
+    font-size: 27px;
+    font-family: 'Muli', sans-serif;
+}
+
+#making-img {
     position: relative;
     float: left;
-    width: 150px;
+    border: 1px inset #cccccc;
+    max-width: 99%;
+    max-height: 99%;
+}
+
+#making-container {
+    position: relative;
+    padding-left: 20px;
+    width: auto;
+    overflow: hidden;
     height: 100%;
 }
 
-#middle {
+#making-title {
+    position: relative;
+    width: 100%;
+    height: 40%;
+
+    color: #cccccc;
+    font-size: 30px;
+    font-family: 'Muli', sans-serif;
+}
+
+#making-content {
+    position: relative;
+    width: 100%;
+    height: 60%;
+
+    color: #cccccc;
+    font-size: 23px;
+    font-family: 'Muli', sans-serif;
+}
+
+#recent-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.recent-tile {
     position: relative;
     float: left;
-    width: 700px;
+    margin-right: 1%;
+    width: 32%;
+    height: 100%;
 }
 
-.TB_edge {
+.recent-img {
+    position: absolute;
+    border: 1px inset #cccccc;
+    max-width: 99%;
+    max-height: 99%;
+}
+
+.recent-img-text {
     position: relative;
-    height: 150px;
+    display: none;
+    left: 10px;
+    top: 80%;
+    transform: translateY(-100%);
+
+    color: #cccccc;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
 }
-
-#center {
-    position: relative;
-    height: 400px;
-}
-
-#display_text {
-    position: relative;
-    padding: 10%;
-
-    color: white;
-    font-size: 65px;
-    font-family: 'Muli', sans-serif;
-
-    margin: 0 auto;
-    text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#triangle {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: green;
-
-    margin: 0 auto;
-}
-
-#square {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: red;
-
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#circle {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: red;
-
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-#x {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    background-color: blue;
-
-    margin: 0 auto;
-}
-*/
