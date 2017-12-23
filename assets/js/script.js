@@ -6,7 +6,7 @@ $(document).ready(function () {
         $('#separator1-line').css({'background-color':'#cccccc', 'transition':'0.3s'});
         $('#separator2-line').css({'background-color':'#cccccc', 'transition':'0.3s'});
         $('#name').css({'color':'#cccccc', 'transition':'0.3s'});
-        $('#location').css({'color':'#cccccc', 'transition':'0.3s'}).typeIt().empty().typeIt({
+        $('#location').css({'color':'#cccccc', 'transition':'0.3s'}).typeIt({
             strings: 'Overview',
             speed: 25,
             breakLines: false,
@@ -18,7 +18,7 @@ $(document).ready(function () {
         $('#separator1-line').css({'background-color':'#D2527F', 'transition':'0.3s'});
         $('#separator2-line').css({'background-color':'#D2527F', 'transition':'0.3s'});
         $('#name').css({'color':'#D2527F', 'transition':'0.3s'});
-        $('#location').css({'color':'#D2527F', 'transition':'0.3s'}).typeIt().empty().typeIt({
+        $('#location').css({'color':'#D2527F', 'transition':'0.3s'}).typeIt({
             strings: 'About Me',
             speed: 25,
             breakLines: false,
@@ -39,7 +39,7 @@ $(document).ready(function () {
         $('#separator1-line').css({'background-color':'#65C6BB', 'transition':'0.3s'});
         $('#separator2-line').css({'background-color':'#65C6BB', 'transition':'0.3s'});
         $('#name').css({'color':'#65C6BB', 'transition':'0.3s'});
-        $('#location').css({'color':'#65C6BB', 'transition':'0.3s'}).typeIt().empty().typeIt({
+        $('#location').css({'color':'#65C6BB', 'transition':'0.3s'}).typeIt({
             strings: 'Projects',
             speed: 25,
             breakLines: false,
@@ -60,7 +60,7 @@ $(document).ready(function () {
         $('#separator1-line').css({'background-color':'#D24D57', 'transition':'0.3s'});
         $('#separator2-line').css({'background-color':'#D24D57', 'transition':'0.3s'});
         $('#name').css({'color':'#D24D57', 'transition':'0.3s'});
-        $('#location').css({'color':'#D24D57', 'transition':'0.3s'}).typeIt().empty().typeIt({
+        $('#location').css({'color':'#D24D57', 'transition':'0.3s'}).typeIt({
             strings: 'Experience',
             speed: 25,
             breakLines: false,
@@ -81,7 +81,7 @@ $(document).ready(function () {
         $('#separator1-line').css({'background-color':'#67809F', 'transition':'0.3s'});
         $('#separator2-line').css({'background-color':'#67809F', 'transition':'0.3s'});
         $('#name').css({'color':'#67809F', 'transition':'0.3s'});
-        $('#location').css({'color':'#67809F', 'transition':'0.3s'}).typeIt().empty().typeIt({
+        $('#location').css({'color':'#67809F', 'transition':'0.3s'}).typeIt({
             strings: 'Fun and Games',
             speed: 25,
             breakLines: false,
