@@ -17,55 +17,64 @@ a, a:visited, a:hover, a:active {
     height: 100%;
 }
 
+#welcome {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: #cccccc;
+
+    display: none;
+}
+
 #navbar {
     position: fixed;
-    width: 300px;
+    width: 250px;
     height: 100%;
     margin-top: 50px;
+
+    display: none;
 }
 
 #profile-pic {
     position: relative;
     left: 25px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 
     transition: 0.3s;
 }
 
 #profile-pic:hover {
     cursor: pointer;
-    transform: scale(1.07);
+    transform: scale(1.1);
 
     transition: 0.3s;
 }
 
 #icon-container {
     position: relative;
-    width: 100%;
-    height: 70px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 248px;
+    height: 58px;
+    margin-left: 1px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .icon {
     position: relative;
     float: left;
-    width: 62px;
-    height: 62px;
+    width: 50px;
+    height: 50px;
     margin-left: 2px;
-    margin-right: 3px;
+    margin-right: 2px;
 
     transition: 0.3s;
     border: 4px solid transparent;
 }
-
-/* Add in later
-.icon:hover {
-    transition: 0.3s;
-    border: 4px solid #b2b2b2;
-}
-*/
 
 .icon-img {
     opacity: 0.5;
@@ -81,13 +90,13 @@ a, a:visited, a:hover, a:active {
 #button-container {
     position: relative;
     width: 100%;
-    height: 320px;
+    height: 232px;
 }
 
 .tab {
     position: relative;
     width: 100%;
-    height: 72px;
+    height: 58px;
     padding-top: 4px;
     padding-bottom: 4px;
 }
@@ -95,7 +104,7 @@ a, a:visited, a:hover, a:active {
 #square {
     position: relative;
     width: 100%;
-    height: 66px;
+    height: 50px;
 
     transition: 0.3s;
     border-top: 3px solid transparent;
@@ -114,7 +123,7 @@ a, a:visited, a:hover, a:active {
 #triangle {
     position: relative;
     width: 100%;
-    height: 66px;
+    height: 50px;
 
     transition: 0.3s;
     border-top: 3px solid transparent;
@@ -133,7 +142,7 @@ a, a:visited, a:hover, a:active {
 #circle {
     position: relative;
     width: 100%;
-    height: 66px;
+    height: 50px;
 
     transition: 0.3s;
     border-top: 3px solid transparent;
@@ -152,7 +161,7 @@ a, a:visited, a:hover, a:active {
 #x {
     position: relative;
     width: 100%;
-    height: 66px;
+    height: 50px;
 
     transition: 0.3s;
     border-top: 3px solid transparent;
@@ -171,15 +180,15 @@ a, a:visited, a:hover, a:active {
 .button-pic {
     position: relative;
     float: left;
-    width: 66px;
-    height: 66px;
+    width: 50px;
+    height: 50px;
 }
 
 .button-text-container {
     position: relative;
     float: left;
-    width: 234px;
-    height: 66px;
+    width: 194px;
+    height: 50px;
 }
 
 .button-text {
@@ -188,23 +197,27 @@ a, a:visited, a:hover, a:active {
     top: 50%;
     transform: translateY(-50%);
 
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Muli', sans-serif;
+
+    display: none;
 }
 
 #separator1 {
     position: fixed;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 300px;
-    width: 40px;
+    margin-left: 250px;
+    width: 50px;
     height: calc(100% - 20px - 20px);
+
+    display: none;
 }
 
 #separator1-line {
     position: relative;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
     width: 10px;
     height: 100%;
 
@@ -213,11 +226,13 @@ a, a:visited, a:hover, a:active {
 
 #top-nav {
     position: fixed;
-    margin-left: 350px;
+    margin-left: 300px;
     margin-top: 50px;
-    width: calc(85% - 340px);
+    width: calc(85% - 300px);
     height: 130px;
     min-width: 660px;
+
+    display: none;
 }
 
 #top-content {
@@ -263,9 +278,9 @@ a, a:visited, a:hover, a:active {
 
 #overview {
     position: relative;
-    margin-left: 350px;
+    margin-left: 300px;
     top: 190px;
-    width: calc(100% - 340px);
+    width: calc(100% - 300px);
     height: calc(100% - 2% - 190px);
 
     display: none;
@@ -371,6 +386,70 @@ a, a:visited, a:hover, a:active {
     font-size: 23px;
     font-family: 'Montserrat', sans-serif;
 }
+
+
+
+#about {
+    position: relative;
+    margin-left: 350px;
+    top: 190px;
+    width: calc(100% - 340px);
+    height: calc(100% - 2% - 190px);
+
+    display: none;
+}
+
+
+
+
+
+#projects {
+    position: relative;
+    margin-left: 350px;
+    top: 190px;
+    width: calc(100% - 340px);
+    height: calc(100% - 2% - 190px);
+
+    display: none;
+}
+
+.projects-tile {
+    position: relative;
+    width: 100%;
+
+}
+
+
+
+#experience {
+    position: relative;
+    margin-left: 350px;
+    top: 190px;
+    width: calc(100% - 340px);
+    height: calc(100% - 2% - 190px);
+
+    display: none;
+}
+
+.experience-tile {
+
+}
+
+
+
+#fun {
+    position: relative;
+    margin-left: 350px;
+    top: 190px;
+    width: calc(100% - 340px);
+    height: calc(100% - 2% - 190px);
+
+    display: none;
+}
+
+
+
+
 
 #wip {
     position: relative;

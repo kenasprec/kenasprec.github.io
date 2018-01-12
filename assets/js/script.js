@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    $('#navbar').fadeIn(750);
+    $('#separator1').fadeIn(750);
+    $('#top-nav').fadeIn(750);
     $('#overview').fadeIn(750);
 
     $('#profile-pic').click(function () {
@@ -29,8 +32,7 @@ $(document).ready(function () {
         $('#overview').hide();
         $('#wip').fadeIn(750);
     }).hover(function () {
-        $(this).find('.button-text').typeIt({
-            strings: 'About Me',
+        $(this).find('.button-text').show().append("About Me").typeIt({
             speed: 50,
             breakLines: false,
             cursor: false
@@ -52,8 +54,7 @@ $(document).ready(function () {
         $('#overview').hide();
         $('#wip').fadeIn(750);
     }).hover(function () {
-        $(this).find('.button-text').typeIt({
-            strings: 'Projects',
+        $(this).find('.button-text').show().append("Projects").typeIt({
             speed: 50,
             breakLines: false,
             cursor: false
@@ -75,8 +76,7 @@ $(document).ready(function () {
         $('#overview').hide();
         $('#wip').fadeIn(750);
     }).hover(function () {
-        $(this).find('.button-text').typeIt({
-            strings: 'Experience',
+        $(this).find('.button-text').show().append("Experience").typeIt({
             speed: 50,
             breakLines: false,
             cursor: false
@@ -98,8 +98,7 @@ $(document).ready(function () {
         $('#overview').hide();
         $('#wip').fadeIn(750);
     }).hover(function () {
-        $(this).find('.button-text').typeIt({
-            strings: 'Fun and Games',
+        $(this).find('.button-text').show().append("Fun and Games").typeIt({
             speed: 50,
             breakLines: false,
             cursor: false
