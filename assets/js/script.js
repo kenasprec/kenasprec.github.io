@@ -1,9 +1,19 @@
 $(document).ready(function () {
 
+    $('#welcome').fadeIn(750).delay(750).fadeOut(750);
+
+    $('#navbar').delay(2000).fadeIn(750);
+    $('#separator1').delay(2000).fadeIn(750);
+    $('#top-nav').delay(2000).fadeIn(750);
+    $('#overview').delay(2000).fadeIn(750);
+
+    /*
     $('#navbar').fadeIn(750);
     $('#separator1').fadeIn(750);
     $('#top-nav').fadeIn(750);
     $('#overview').fadeIn(750);
+    */
+
 
     $('#profile-pic').click(function () {
         $('#separator1-line').css({'background-color':'#cccccc', 'transition':'0.3s'});
@@ -11,8 +21,9 @@ $(document).ready(function () {
         $('#name').css({'color':'#cccccc', 'transition':'0.3s'});
         $('#location').css({'color':'#cccccc', 'transition':'0.3s'}).typeIt({
             strings: 'Overview',
-            speed: 25,
+            speed: 35,
             breakLines: false,
+            lifeLike: false,
             cursor: false
         });
         $('#wip').hide();
@@ -24,17 +35,19 @@ $(document).ready(function () {
         $('#separator2-line').css({'background-color':'#D2527F', 'transition':'0.3s'});
         $('#name').css({'color':'#D2527F', 'transition':'0.3s'});
         $('#location').css({'color':'#D2527F', 'transition':'0.3s'}).typeIt({
-            strings: 'About Me',
-            speed: 25,
+            strings: 'Biography',
+            speed: 35,
             breakLines: false,
+            lifeLike: false,
             cursor: false
         });
         $('#overview').hide();
         $('#wip').fadeIn(750);
     }).hover(function () {
-        $(this).find('.button-text').show().append("About Me").typeIt({
+        $(this).find('.button-text').show().append("Biography").typeIt({
             speed: 50,
             breakLines: false,
+            lifeLike: false,
             cursor: false
         })
     }, function () {
@@ -46,17 +59,19 @@ $(document).ready(function () {
         $('#separator2-line').css({'background-color':'#65C6BB', 'transition':'0.3s'});
         $('#name').css({'color':'#65C6BB', 'transition':'0.3s'});
         $('#location').css({'color':'#65C6BB', 'transition':'0.3s'}).typeIt({
-            strings: 'Projects',
-            speed: 25,
+            strings: 'Inventory',
+            speed: 35,
             breakLines: false,
+            lifeLike: false,
             cursor: false
         });
         $('#overview').hide();
         $('#wip').fadeIn(750);
     }).hover(function () {
-        $(this).find('.button-text').show().append("Projects").typeIt({
+        $(this).find('.button-text').show().append("Inventory").typeIt({
             speed: 50,
             breakLines: false,
+            lifeLike: false,
             cursor: false
         })
     }, function () {
@@ -68,17 +83,19 @@ $(document).ready(function () {
         $('#separator2-line').css({'background-color':'#D24D57', 'transition':'0.3s'});
         $('#name').css({'color':'#D24D57', 'transition':'0.3s'});
         $('#location').css({'color':'#D24D57', 'transition':'0.3s'}).typeIt({
-            strings: 'Experience',
-            speed: 25,
+            strings: 'Progress',
+            speed: 35,
             breakLines: false,
+            lifeLike: false,
             cursor: false
         });
         $('#overview').hide();
         $('#wip').fadeIn(750);
     }).hover(function () {
-        $(this).find('.button-text').show().append("Experience").typeIt({
+        $(this).find('.button-text').show().append("Progress").typeIt({
             speed: 50,
             breakLines: false,
+            lifeLike: false,
             cursor: false
         })
     }, function () {
@@ -90,17 +107,19 @@ $(document).ready(function () {
         $('#separator2-line').css({'background-color':'#67809F', 'transition':'0.3s'});
         $('#name').css({'color':'#67809F', 'transition':'0.3s'});
         $('#location').css({'color':'#67809F', 'transition':'0.3s'}).typeIt({
-            strings: 'Fun and Games',
-            speed: 25,
+            strings: 'Easter Eggs',
+            speed: 35,
             breakLines: false,
+            lifeLike: false,
             cursor: false
         });
         $('#overview').hide();
         $('#wip').fadeIn(750);
     }).hover(function () {
-        $(this).find('.button-text').show().append("Fun and Games").typeIt({
+        $(this).find('.button-text').show().append("Easter Eggs").typeIt({
             speed: 50,
             breakLines: false,
+            lifeLike: false,
             cursor: false
         })
     }, function () {

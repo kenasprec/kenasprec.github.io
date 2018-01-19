@@ -24,9 +24,10 @@ a, a:visited, a:hover, a:active {
     transform: translateY(-50%);
 
     font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Muli', sans-serif;
     color: #cccccc;
 
+    z-index: 2;
     display: none;
 }
 
@@ -36,6 +37,7 @@ a, a:visited, a:hover, a:active {
     height: 100%;
     margin-top: 50px;
 
+    z-index: 2;
     display: none;
 }
 
@@ -199,6 +201,7 @@ a, a:visited, a:hover, a:active {
 
     font-size: 20px;
     font-family: 'Muli', sans-serif;
+    font-weight: 700;
 
     display: none;
 }
@@ -211,6 +214,7 @@ a, a:visited, a:hover, a:active {
     width: 50px;
     height: calc(100% - 20px - 20px);
 
+    z-index: 2;
     display: none;
 }
 
@@ -232,6 +236,7 @@ a, a:visited, a:hover, a:active {
     height: 130px;
     min-width: 660px;
 
+    z-index: 2;
     display: none;
 }
 
@@ -247,8 +252,9 @@ a, a:visited, a:hover, a:active {
     height: 50px;
 
     color: #cccccc;
-    font-size: 40px;
+    font-size: 43px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 #location {
@@ -257,8 +263,9 @@ a, a:visited, a:hover, a:active {
     height: 40px;
 
     color: #cccccc;
-    font-size: 30px;
+    font-size: 32px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 #separator2 {
@@ -276,12 +283,20 @@ a, a:visited, a:hover, a:active {
     background-color: #cccccc;
 }
 
+#top-hide {
+    position: fixed;
+    width: 100%;
+    height: 180px;
+    background-color: #323232;
+
+    z-index: 1;
+}
+
 #overview {
     position: relative;
     margin-left: 300px;
-    top: 190px;
+    top: 180px;
     width: calc(100% - 300px);
-    height: calc(100% - 2% - 190px);
 
     display: none;
 }
@@ -289,32 +304,34 @@ a, a:visited, a:hover, a:active {
 .overview-tile {
     position: relative;
     width: 100%;
-    height: 33%;
+    height: 270px;
+    padding-bottom: 20px;
 }
 
 .overview-header {
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 35px;
 
     color: #cccccc;
-    font-size: 24px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 2px solid #cccccc;
 }
 
 .overview-content {
     position: relative;
     width: 100%;
-    height: calc(100% - 30px - 14px);
+    height: calc(100% - 35px - 14px);
     margin-top: 7px;
     margin-bottom: 7px;
 }
 
 #summary {
     color: #cccccc;
-    font-size: 27px;
+    font-size: 24px;
     font-family: 'Muli', sans-serif;
 }
 
@@ -379,7 +396,7 @@ a, a:visited, a:hover, a:active {
     position: relative;
     display: none;
     left: 10px;
-    top: 80%;
+    top: 10px;
     transform: translateY(-100%);
 
     color: #cccccc;
