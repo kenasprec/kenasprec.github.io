@@ -6,27 +6,23 @@ body, html {
     font-family: "Karla", sans-serif;
 }
 
-#container {
-    margin: 0 auto;
-    width: 1080px;
-}
-
 #navbar-container {
     position: fixed;
-    width: 1080px;
+    width: 100vw;
     height: 90px;
 
-    border: 1px solid black;
+    vertical-align: top;
+    z-index: 1000;
+    background-color: white;
 }
 
 #navbar {
     position: relative;
-    width: 100%;
+    margin: 0 auto;
+    width: 1080px;
     height: 50%;
     top: 50%;
     transform: translateY(-50%);
-
-    border: 1px solid black;
 }
 
 #title-icon {
@@ -38,12 +34,38 @@ body, html {
     font-size: 40px;
 }
 
+#navbar-button-container {
+    position: relative;
+    float: right;
+    width: 39%;
+    height: 100%;
+
+    font-family: "Maven Pro", sans-serif;
+    font-size: 22px;
+}
+
+.navbar-button {
+    float: left;
+    width: 33.33%;
+    height: 100%;
+
+    text-align: center;
+    line-height: 45px;
+}
+
+
 
 
 #content-container {
+    position: relative;
+    top: 90px;
     margin: 0 auto;
     width: 960px;
     height: 10000px;
+}
 
-    border: 1px solid black;
+#paragraph-blurb {
+    position: relative;
+    top: 50px;
+    font-size: 20px;
 }
