@@ -6,6 +6,16 @@ body, html {
     font-family: "Karla", sans-serif;
 }
 
+a:link, a:visited, a:link:active, a:visited:active {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+
+}
+
 #container {
     position: relative;
     width: 100%;
@@ -142,11 +152,6 @@ body, html {
     /* border: 1px solid black;
     padding: 20px; */
     font-size: 25px;
-}
-
-.project-link:link, .project-link:visited, .project-link:link:active, .project-link:visited:active {
-    color: black;
-    text-decoration: none;
 }
 
 .project-picture {
