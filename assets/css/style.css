@@ -1,7 +1,6 @@
 body, html {
     margin: 0 auto;
-    width: 100%;
-    height: 100%;
+
 
     font-family: "Karla", sans-serif;
 }
@@ -9,17 +8,12 @@ body, html {
 a:link, a:visited, a:link:active, a:visited:active {
     color: black;
     text-decoration: none;
-    cursor: pointer;
-}
-
-a:hover {
-
 }
 
 #container {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 0;
 
     margin: 0 auto;
 }
@@ -61,6 +55,7 @@ a:hover {
     font-size: 22px;
 }
 
+/* A TAG */
 .navbar-button {
     float: left;
     width: 33.33%;
@@ -68,6 +63,16 @@ a:hover {
 
     text-align: center;
     line-height: 45px;
+
+    background: linear-gradient(to right, #4d89ff 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+}
+
+.navbar-button:hover {
+    background-position: left bottom;
+    cursor: pointer;
 }
 
 .hi {
@@ -147,6 +152,17 @@ a:hover {
 
 .project-description {
     font-size: 25px;
+}
+
+/* A TAG */
+#project-link-1 {
+    font-size: 25px;
+
+    transition: 0.5s;
+}
+
+#project-link-1:hover {
+    color: #FF6600;
 }
 
 .project-link {
