@@ -67,7 +67,7 @@ a:link, a:visited, a:link:active, a:visited:active {
     background: linear-gradient(to right, #4d89ff 50%, white 50%);
     background-size: 200% 100%;
     background-position: right bottom;
-    transition: all .5s ease-out;
+    transition: all .3s ease-out;
 }
 
 .navbar-button:hover {
@@ -157,12 +157,18 @@ a:link, a:visited, a:link:active, a:visited:active {
 /* A TAG */
 #project-link-1 {
     font-size: 25px;
+    padding: 15px;
+    border: 1.5px solid #FF6600;
 
-    transition: 0.5s;
+    background: linear-gradient(to right, #FF6600 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .3s ease-out;
 }
 
 #project-link-1:hover {
-    color: #FF6600;
+    background-position: left bottom;
+    cursor: pointer;
 }
 
 .project-link {
