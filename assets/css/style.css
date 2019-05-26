@@ -1,7 +1,6 @@
 body, html {
     margin: 0 auto;
 
-
     font-family: "Karla", sans-serif;
 }
 
@@ -73,6 +72,7 @@ a:link, a:visited, a:link:active, a:visited:active {
 .navbar-button:hover {
     background-position: left bottom;
     cursor: pointer;
+    color: whitesmoke;
 }
 
 .hi {
@@ -169,6 +169,41 @@ a:link, a:visited, a:link:active, a:visited:active {
 #project-link-1:hover {
     background-position: left bottom;
     cursor: pointer;
+    color: whitesmoke;
+}
+
+#project-link-2 {
+    font-size: 25px;
+    padding: 15px;
+    border: 1.5px solid #d1d0d1;
+
+    background: linear-gradient(to right, #d1d0d1 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+}
+
+#project-link-2:hover {
+    background-position: left bottom;
+    cursor: pointer;
+    color: whitesmoke;
+}
+
+#project-link-3 {
+    font-size: 25px;
+    padding: 15px;
+    border: 1.5px solid #F5C518;
+
+    background: linear-gradient(to right, #F5C518 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .3s ease-out;
+}
+
+#project-link-3:hover {
+    background-position: left bottom;
+    cursor: pointer;
+    color: whitesmoke;
 }
 
 .project-link {
