@@ -1,5 +1,6 @@
 body, html {
     margin: 0 auto;
+    height: 0px;
 
     font-family: "Karla", sans-serif;
 }
@@ -24,6 +25,7 @@ a:link, a:visited, a:link:active, a:visited:active {
 
     z-index: 1;
     background-color: white;
+    border-bottom: 10px solid #4d89ff;
 }
 
 #navbar {
@@ -87,7 +89,7 @@ a:link, a:visited, a:link:active, a:visited:active {
 
 #content-container {
     position: relative;
-    top: 90px;
+    top: 110px;
     margin: 0 auto;
     width: 960px;
 
@@ -206,12 +208,6 @@ a:link, a:visited, a:link:active, a:visited:active {
     color: whitesmoke;
 }
 
-.project-link {
-    /* border: 1px solid black;
-    padding: 20px; */
-    font-size: 25px;
-}
-
 .project-picture {
     position: relative;
     width: 480px;
@@ -219,8 +215,39 @@ a:link, a:visited, a:link:active, a:visited:active {
     float: left;
 }
 
-.substitute-picture {
-    width: 100%;
-    height: 100%;
-    background-color: red;
+
+/* about.html */
+
+#about-container {
+    position: relative;
+    top: 50px;
+}
+
+#about-picture {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+#about-text {
+    display: inline-block;
+    float: right;
+    width: calc(100% - 435px);
+    margin-left: 35px;
+    font-size: 18px;
+}
+
+#about-text h2 {
+    margin-top: 0px;
+}
+
+#about-text a {
+    color: rgba(0, 0, 255, 0.6);
+    transition: .3s;
+}
+
+#about-text a:hover {
+    color: rgba(0, 0, 255, 1);
 }
