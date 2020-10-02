@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35b3cc30-3ab3-42fe-9105-f381da03e8ad" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/old_index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/Kendal Asprec Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Kendal Asprec Resume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fitfind.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +107,7 @@
       <workItem from="1559167368767" duration="25000" />
       <workItem from="1559231547688" duration="7144000" />
       <workItem from="1559278140445" duration="2559000" />
-      <workItem from="1601651046251" duration="2102000" />
+      <workItem from="1601651046251" duration="2558000" />
     </task>
     <servers />
   </component>
