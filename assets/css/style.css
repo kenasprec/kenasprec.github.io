@@ -282,22 +282,47 @@ a:link, a:visited, a:link:active, a:visited:active {
 
 /* case studies */
 
+.cs-picture-full img {
+    max-width: 960px;
+    height: auto;
 
-#cs-container {
-    position: relative;
-    top: 110px;
-    width: 100%;
 }
 
-.cs-row {
-    width: 100%;
-    padding-bottom: 2em;
+#cs-header {
+    width: 960px;
+}
+
+#cs-header-title {
+
+}
+
+#cs-header-description {
+    width: 960px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
-.cs-row-half {
-    width: 50%;
+.cs-header-description-container {
+    padding: 4px;
     flex-grow: 1;
+    flex-basis: 0;
 }
+
+#cs-table-of-contents ol{
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.cs-section {
+
+}
+
+.cs-section-title {
+
+}
+
+.cs-section-description-full {
+
+}
+
+/* case study table of contents IDs */
+
