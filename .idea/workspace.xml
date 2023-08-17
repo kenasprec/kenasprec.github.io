@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="35b3cc30-3ab3-42fe-9105-f381da03e8ad" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/Kendal Asprec UX Resume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/Kendal Asprec UX Resume.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +119,7 @@
       <workItem from="1664921128716" duration="238000" />
       <workItem from="1692244871746" duration="998000" />
       <workItem from="1692246244485" duration="60000" />
+      <workItem from="1692314073807" duration="248000" />
     </task>
     <servers />
   </component>
