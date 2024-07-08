@@ -25,9 +25,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
@@ -45,6 +45,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/kenas/OneDrive/Documents/GitHub/kenasprec.github.io",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "vcs.Git",
@@ -129,6 +130,9 @@
       <workItem from="1692246244485" duration="60000" />
       <workItem from="1692314073807" duration="248000" />
       <workItem from="1706636006766" duration="109000" />
+      <workItem from="1720481606911" duration="24000" />
+      <workItem from="1720481650542" duration="56000" />
+      <workItem from="1720481812371" duration="222000" />
     </task>
     <servers />
   </component>
